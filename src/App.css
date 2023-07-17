@@ -1,4 +1,5 @@
 :root {
+  --primary-purple: #6C1FCE;
   --primary-yellow: #EFDD4B;
   --box-shadow: -5px -28px 100px 0px #F1C433 inset, 0px -13px 10px 0px #E8B921 inset, 20px 16px 10px 0px rgba(255, 249, 249, 0.30) inset, 11px 15px 15px 0px rgba(0, 0, 0, 0.25);
   --transform-btn: scale(0.9);
@@ -199,26 +200,210 @@
 
 /* Level Page CSS Ends */
 
+/* Game Page CSS starts */
 
+.game {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+}
 
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 10px;
+  background: var(--primary-yellow);
+  border-radius: 25px;
+  width: 95%;
+}
 
+.game-pause-btn {
+  /* width: 70px; */
+  height: 60px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: var(--transition-btn);
+}
 
+.game-pause-btn:hover {
+  transform: var(--transform-btn);
+}
 
+.game-pause-btn img {
+  height: 100%;
+}
 
+.game-timer-count {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-size: 25px;
+  color: #ffffff;
+}
 
+.game-main {
+  margin-top: 2rem;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 
+.game-img-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid var(--primary-purple);
+  width: 350px;
+  height: 300px;
+  border-radius: 2.5rem;
+  background: var(--off-white);
+}
 
+.game-img-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2.2rem;
 
+}
 
+.game-main-heading {
+  width: 500px;
+  /* font-family: 'Luckiest Guy', sans-serif; */
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-align: center;
+}
 
+.game-input {
+  background: #EAD6FF;
+  width: 350px;
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  color: #030303;
+  font-weight: 800;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
 
+.game-input::placeholder {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
 
+.game-submit-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 200px;
+  cursor: pointer;
+  transition: var(--transition-btn);
+}
 
+.game-submit-btn:hover {
+  transform: var(--transform-btn);
+}
 
+.game-submit-btn img {
+  width: 100%;
+}
 
+/* Game Page CSS  ends */
 
+/* Summary Page CSS Starts */
 
+.summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.summary-box {
+  width: 450px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--primary-yellow);
+  padding: 2rem;
+  border: 5px solid #D7AA19;
+  border-radius: 50px;
+  box-shadow: var(--box-shadow);
+}
+
+.summary-box .summary-heading {
+  width: 150px;
+  /* height: 30px; */
+}
+
+.summary-box .summary-star {
+  width: 250px;
+}
+
+.summary-box .summary-level {
+  font-weight: 900;
+  font-size: 0.9rem;
+  color: #D7AA19;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.summary-box .summary-score-box {
+  width: 170px;
+  background: #d9d9d9;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 20px;
+  padding: 15px 0;
+}
+
+.summary-box .summary-score-box h3 {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  text-align: center;
+  color: var(--primary-blue);
+}
+
+.summary-box .summary-score-subtitle {
+  margin-top: 5px;
+  margin-bottom: 2px;
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: #D7AA19;
+  text-transform: uppercase;
+}
+
+.summary-btn button {
+  width: 65px;
+  margin: 10px;
+  /* height: 70px; */
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-btn);
+  background: none;
+}
+
+.summary-btn button:hover {
+  transform: var(--transform-btn);
+}
+
+.summary-btn img {
+  width: 100%;
+}
+/* Summary Page CSS Ends */
 
 
 /* Tablet Styles Start */
