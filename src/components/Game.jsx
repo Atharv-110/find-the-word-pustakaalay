@@ -121,7 +121,7 @@ export default function Game() {
             size={60}
             strokeWidth={5}
             isPlaying={isPlaying}
-            duration={5}
+            duration={60}
             trailColor="#fff"
             colors="#6C1FCE"
             onComplete={() => complete()}
