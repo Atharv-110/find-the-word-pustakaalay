@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import Swal from "sweetalert2";
-import { Toaster, toast } from "react-hot-toast";
 
 // import data
 import gameData from "../data/gameData";
@@ -80,7 +79,7 @@ export default function Game() {
     Swal.fire({
       allowOutsideClick: false,
       title: "Game Paused",
-      iconHtml: '<i class="fa-solid fa-pause" style="color: #000000;"></i>',
+      iconHtml: '<i class="fa-solid fa-pause fa-fade" style="color: #000000;"></i>',
       showCancelButton: true,
       cancelButtonText: "Quit",
       confirmButtonColor: "#3085d6",
@@ -112,7 +111,6 @@ export default function Game() {
 
   return (
     <div className="game">
-      <Toaster position="bottom-right" reverseOrder={false} />
       <div className="game-header">
         <button onClick={handlePause} className="game-pause-btn">
           <img src={pauseBtn} alt="pause-button-img" />
@@ -123,7 +121,7 @@ export default function Game() {
             size={60}
             strokeWidth={5}
             isPlaying={isPlaying}
-            duration={1000}
+            duration={5}
             trailColor="#fff"
             colors="#6C1FCE"
             onComplete={() => complete()}
